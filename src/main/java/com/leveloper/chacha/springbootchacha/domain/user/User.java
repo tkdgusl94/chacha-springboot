@@ -29,5 +29,6 @@ public class User extends BaseTimeEntity {
         this.name = name;
         this.email = email;
     }
-
 }
+
+

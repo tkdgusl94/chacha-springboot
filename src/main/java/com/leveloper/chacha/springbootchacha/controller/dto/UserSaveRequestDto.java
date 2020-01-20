@@ -12,7 +12,7 @@ public class UserSaveRequestDto {
     private String email;
 
     @Builder
-    public UserSaveRequestDto(String name, String email){
+    public UserSaveRequestDto(String name, String email) {
         this.name = name;
         this.email = email;
     }
