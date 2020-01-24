@@ -9,7 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 @RequiredArgsConstructor
 @Service
 public class UserService {
-
     private final UserRepository userRepository;
 
     @Transactional
@@ -17,3 +16,4 @@ public class UserService {
         return userRepository.save(requestDto.toEntity()).getEmail();
     }
 }
+
