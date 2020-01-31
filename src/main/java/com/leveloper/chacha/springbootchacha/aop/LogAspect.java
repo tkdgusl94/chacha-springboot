@@ -16,7 +16,7 @@ public class LogAspect {
         Object proceed = joinPoint.proceed();
         long end = System.currentTimeMillis();
 
-        log.info("실행 시간 : " + (end - start));
+        log.info("실행 시간 : " + (end - start) + "ms");
         return proceed;
     }
 }

@@ -2,8 +2,6 @@ server:
   port: 8080
 
 spring:
-#  datasource:
-#    schema: classpath*:db/realdb/schema.sql
 
   profiles:
     include: oauth, real-db
