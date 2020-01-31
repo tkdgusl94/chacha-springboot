@@ -18,7 +18,10 @@ public class UserSaveRequestDto {
     }
 
     public User toEntity() {
-        return User.builder().name(name).email(email).build();
+        return User.builder()
+                .name(name)
+                .email(email)
+                .build();
     }
 }
 
