@@ -19,6 +19,8 @@ spring:
     console:
       enabled: true
 
+  session:
+    store-type: jdbc
 logging:
   level:
     org:
