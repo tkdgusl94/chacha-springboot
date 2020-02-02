@@ -2,10 +2,10 @@ create table if not EXISTS user (
   user_id bigint not null AUTO_INCREMENT,
   create_date timestamp,
   modified_date timestamp,
-  email varchar(255) not null,
-  name varchar(255) not null,
+  email varchar(100) not null,
+  name varchar(30) not null,
   picture varchar(255),
-  role varchar(255),
+  role varchar(20),
 primary key(user_id)
 )engine = InnoDB;
 
