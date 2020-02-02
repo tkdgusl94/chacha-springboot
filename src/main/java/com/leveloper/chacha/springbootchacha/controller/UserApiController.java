@@ -2,7 +2,7 @@ package com.leveloper.chacha.springbootchacha.controller;
 
 import com.leveloper.chacha.springbootchacha.controller.dto.UserSaveRequestDto;
 import com.leveloper.chacha.springbootchacha.domain.user.User;
-import com.leveloper.chacha.springbootchacha.service.user.UserService;
+import com.leveloper.chacha.springbootchacha.service.UserService;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

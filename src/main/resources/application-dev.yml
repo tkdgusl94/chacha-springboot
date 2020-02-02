@@ -1,14 +1,16 @@
 database: hsqldb
 
 spring:
+  profiles:
+    include: oauth
   datasource:
-    schema: classpath*:db/${database}/schema.sql
-    data: classpath*:db/${database}/data.sql
+#    schema: classpath*:db/${database}/schema.sql
+#    data: classpath*:db/${database}/data.sql
 
   jpa:
     show_spl: true
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
       properties:
         hibernate:
           format_sql: true
