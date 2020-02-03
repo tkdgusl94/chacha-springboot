@@ -6,10 +6,10 @@
     </ul>
     <div>
         <a href="/"><h3 class="text-muted">HELLO chacha</h3></a>
-        <a class="btn btn-success active" href="/oauth2/authorization/google" th:if="${userName}==null">Google 로그인</a>
-        <a class="btn btn-secondary active" href="/oauth2/authorization/naver" th:if="${userName}==null">Naver 로그인</a>
-        <a class="btn btn-lg btn-secondary" href="/logout" th:if="${userName}!=null">로그아웃</a>
-        <h3 th:text="${userName}">HELLO chacha</h3>
+        <a class="btn btn-primary active" href="/oauth2/authorization/google" th:if="${userName}==null">Google 로그인</a>
+        <a class="btn btn-success active" href="/oauth2/authorization/naver" th:if="${userName}==null">Naver 로그인</a>
+        <a class="btn btn-secondary" href="/logout" th:if="${userName}!=null">로그아웃</a>
+        <h3 th:text="${userName}"></h3>
     </div>
 
 </div>
