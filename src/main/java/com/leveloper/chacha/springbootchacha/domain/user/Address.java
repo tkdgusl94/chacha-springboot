@@ -1,4 +1,4 @@
-package com.leveloper.chacha.springbootchacha.domain;
+package com.leveloper.chacha.springbootchacha.domain.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

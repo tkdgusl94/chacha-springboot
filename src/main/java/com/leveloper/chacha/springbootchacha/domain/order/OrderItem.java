@@ -1,6 +1,7 @@
-package com.leveloper.chacha.springbootchacha.domain;
+package com.leveloper.chacha.springbootchacha.domain.order;
 
 import com.leveloper.chacha.springbootchacha.domain.item.Item;
+import com.leveloper.chacha.springbootchacha.domain.order.Order;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

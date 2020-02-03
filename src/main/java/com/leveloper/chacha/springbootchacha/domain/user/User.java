@@ -1,14 +1,11 @@
 package com.leveloper.chacha.springbootchacha.domain.user;
 
-import com.leveloper.chacha.springbootchacha.domain.Address;
 import com.leveloper.chacha.springbootchacha.domain.BaseTimeEntity;
-import com.leveloper.chacha.springbootchacha.domain.Order;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Getter
 @NoArgsConstructor

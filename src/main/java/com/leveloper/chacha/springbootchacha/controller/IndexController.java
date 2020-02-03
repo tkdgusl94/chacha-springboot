@@ -17,4 +17,12 @@ public class IndexController {
         }
         return "index";
     }
+
+    @GetMapping("/items/new")
+    public String createItem(Model model, @LoginUser SessionUser user){
+        if (user != null) {
+            model.addAttribute("userName", user.getName());
+        }
+        return "items/createItem";
+    }
 }

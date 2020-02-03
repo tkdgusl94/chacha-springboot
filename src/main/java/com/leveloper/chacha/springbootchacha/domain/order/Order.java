@@ -1,6 +1,8 @@
-package com.leveloper.chacha.springbootchacha.domain;
+package com.leveloper.chacha.springbootchacha.domain.order;
 
 
+import com.leveloper.chacha.springbootchacha.domain.BaseTimeEntity;
+import com.leveloper.chacha.springbootchacha.domain.delivery.Delivery;
 import com.leveloper.chacha.springbootchacha.domain.user.User;
 import lombok.AccessLevel;
 import lombok.Getter;

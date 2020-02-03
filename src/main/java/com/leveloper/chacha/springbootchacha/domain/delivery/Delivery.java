@@ -1,5 +1,8 @@
-package com.leveloper.chacha.springbootchacha.domain;
+package com.leveloper.chacha.springbootchacha.domain.delivery;
 
+import com.leveloper.chacha.springbootchacha.domain.user.Address;
+import com.leveloper.chacha.springbootchacha.domain.BaseTimeEntity;
+import com.leveloper.chacha.springbootchacha.domain.order.Order;
 import lombok.Getter;
 
 import javax.persistence.*;
@@ -7,7 +10,7 @@ import javax.persistence.*;
 
 @Getter
 @Entity
-public class Delivery extends BaseTimeEntity{
+public class Delivery extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="delivery_id")
