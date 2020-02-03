@@ -12,3 +12,8 @@ spring:
 
   session:
     store-type: jdbc
+
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: false # p6spy 비활성화
