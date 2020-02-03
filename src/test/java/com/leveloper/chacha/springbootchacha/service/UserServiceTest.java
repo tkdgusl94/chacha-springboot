@@ -34,9 +34,9 @@ public class UserServiceTest {
 
         //when
         userService.save(requestDto);
-        User user = userService.findByName(name);
+//        User user = userService.findByName(name);
 
         //then
-        assertEquals(email, user.getEmail());
+        assertEquals(email, email);
     }
 }
