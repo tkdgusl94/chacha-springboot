@@ -1,6 +1,31 @@
 server:
   port: 9090
 
+database: hsqldb
+
 spring:
   profiles:
-    active: dev
+    include: oauth
+  datasource:
+  #    schema: classpath*:db/${database}/schema.sql
+  #    data: classpath*:db/${database}/data.sql
+
+  jpa:
+    show_spl: true
+    hibernate:
+      ddl-auto: create
+      properties:
+        hibernate:
+          format_sql: true
+
+  h2:
+    console:
+      enabled: true
+
+  session:
+    store-type: jdbc
+
+logging:
+  level:
+    org:
+      springframework.web: debug
