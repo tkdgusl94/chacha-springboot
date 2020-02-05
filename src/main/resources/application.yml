@@ -5,7 +5,7 @@ database: hsqldb
 
 spring:
   profiles:
-    include: oauth
+    include: oauth, aws
   datasource:
   #    schema: classpath*:db/${database}/schema.sql
   #    data: classpath*:db/${database}/data.sql
@@ -24,6 +24,18 @@ spring:
 
   session:
     store-type: jdbc
+
+cloud:
+  aws:
+    s3:
+      bucket: chacha-file
+    region:
+      static: ap-northeast-2
+    credentials:
+      accessKey: AKIAZA3GXW7SCP57WLMR
+      secretKey: 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
+    stack:
+      auto: false
 
 logging:
   level:

@@ -6,6 +6,7 @@ build/
 !**/src/test/**
 
 application-oauth.properties
+application-aws.yml
 ### STS ###
 .apt_generated
 .classpath
