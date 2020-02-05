@@ -31,9 +31,6 @@ cloud:
       bucket: chacha-file
     region:
       static: ap-northeast-2
-    credentials:
-      accessKey: AKIAZA3GXW7SCP57WLMR
-      secretKey: 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
     stack:
       auto: false
 
