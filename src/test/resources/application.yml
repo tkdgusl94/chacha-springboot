@@ -7,8 +7,8 @@ spring:
       client:
         registration:
           google:
-            client-id: 892496936170-2gu02erct35eb0lmveq6jtueuinufqpi.apps.googleusercontent.com
-            client-secret: uyH5Ls306wB_ikiXEarr2OsI
+            client-id: test
+            client-secret: test
             scope: profile, email
   jpa:
     show_spl: true
@@ -21,4 +21,13 @@ logging:
   level:
     org:
       springframework.web: debug
+
+cloud:
+  aws:
+    s3:
+      bucket: chacha-file
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false
 
