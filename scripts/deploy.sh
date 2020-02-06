@@ -35,4 +35,4 @@ echo "> $JAR_NAME 실행"
 nohup java -jar \
     -Dspring.config.location=classpath:/application-real.yml,/home/ec2-user/project/application-oauth.properties,/home/ec2-user/project/application-real-db.properties \
     -Dspring.profiles.active=real \
-    $JAR_NAME > $REPOSITORY/nohup.out 2>&1 &
+    /home/ec2-user/project/chacha/springboot-chacha-0.0.1-SNAPSHOT.jar > /home/ec2-user/project/chacha/nohup.out 2>&1 &
