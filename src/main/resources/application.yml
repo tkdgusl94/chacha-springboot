@@ -11,7 +11,7 @@ spring:
   #    data: classpath*:db/${database}/data.sql
 
   jpa:
-    show_spl: true
+    #show_sql: true
     hibernate:
       ddl-auto: create
       properties:
@@ -38,3 +38,8 @@ logging:
   level:
     org:
       springframework.web: debug
+
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: true # p6spy 비활성화

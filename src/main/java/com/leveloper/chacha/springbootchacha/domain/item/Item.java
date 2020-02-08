@@ -1,5 +1,6 @@
 package com.leveloper.chacha.springbootchacha.domain.item;
 
+import lombok.Builder;
 import lombok.Getter;
 
 import javax.persistence.*;
@@ -22,4 +23,10 @@ public abstract class Item {
 
     @Column
     private int stockQuantity;
+
+    public void setItem(String name, int price, int stockQuantity){
+        this.name = name;
+        this.price = price;
+        this.stockQuantity = stockQuantity;
+    }
 }

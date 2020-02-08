@@ -13,7 +13,7 @@ public class UserApiController {
     private final UserService userService;
 
     @PostMapping("/api/v1/user")
-    public String save(@RequestBody UserSaveRequestDto requestDto){
+    public String save(@RequestBody UserSaveRequestDto requestDto) {
         return userService.save(requestDto);
     }
 }
