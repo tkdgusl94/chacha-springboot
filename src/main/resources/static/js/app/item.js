@@ -25,8 +25,7 @@ var main = {
             contentType: false,
             processData: false,
             data: formData
-        }).done(function(res) {
-            alert('성공');
+        }).done(function(id) {
             window.location.href = '/';
         }).fail(function (error) {
             alert(JSON.stringify(error));
