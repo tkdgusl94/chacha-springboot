@@ -7,21 +7,26 @@ var main = {
     },
 
     save : function () {
-        var data = {
-            name: $('#name').val(),
-            price: $('#price').val(),
-            stockQuantity: $('#stockQuantity').val(),
-            author: $('#author').val(),
-            isbn: $('#isbn').val()
-        };
+        var formData = new FormData();
+
+        var file = $('#img')[0].files[0];
+
+        formData.append('file', file);
+        formData.append('name',$('#name').val());
+        formData.append('price', $('#price').val());
+        formData.append('stockQuantity',$('#stockQuantity').val());
+        formData.append('author',$('#author').val());
+        formData.append('isbn',$('#isbn').val());
+
         $.ajax({
             type: 'POST',
             url: '/api/v1/item',
             dataType: 'json',
-            contentType:'application/json; charset=utf-8',
-            data: JSON.stringify(data)
+            contentType: false,
+            processData: false,
+            data: formData
         }).done(function(res) {
-            alert('name :'+ res+'\n책이 등록 되었습니다.');
+            alert('성공');
             window.location.href = '/';
         }).fail(function (error) {
             alert(JSON.stringify(error));

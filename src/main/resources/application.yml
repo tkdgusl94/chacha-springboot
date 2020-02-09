@@ -11,7 +11,7 @@ spring:
   #    data: classpath*:db/${database}/data.sql
 
   jpa:
-    #show_sql: true
+    show_sql: true
     hibernate:
       ddl-auto: create
       properties:
@@ -42,4 +42,4 @@ logging:
 decorator:
   datasource:
     p6spy:
-      enable-logging: true # p6spy 비활성화
+      enable-logging: false # p6spy 비활성화

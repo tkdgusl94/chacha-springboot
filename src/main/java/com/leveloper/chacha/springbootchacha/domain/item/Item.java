@@ -24,9 +24,16 @@ public abstract class Item {
     @Column
     private int stockQuantity;
 
+    @Column
+    private String imgUrl;
+
     public void setItem(String name, int price, int stockQuantity){
         this.name = name;
         this.price = price;
         this.stockQuantity = stockQuantity;
+    }
+
+    public void setImgUrl(String imgUrl){
+        this.imgUrl = imgUrl;
     }
 }
