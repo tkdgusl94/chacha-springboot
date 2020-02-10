@@ -2,8 +2,35 @@
 <div class="container">
     <div class="card border-0 shadow my-5">
         <div class="card-body p-5">
-            <div class="col-md-6">
+            <div class="col-sm-12 h-100 d-table">
+                <h3>상품 내용</h3>
+                <div>
 
+                </div>
+                <table class="table table table-bordered">
+                    <thead class="thead-strong">
+                    <tr>
+                        <th>이름</th>
+                        <th>가격</th>
+                        <th>잔고</th>
+                        <th>작가</th>
+                        <th>ISBN</th>
+                        <th>이미지</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    {{#item}}
+                        <tr>
+                            <td>{{name}}</td>
+                            <td>{{price}}</a></td>
+                            <td>{{stockQuantity}}</td>
+                            <td>{{author}}</td>
+                            <td>{{isbn}}</td>
+                            <td><img src={{imgUrl}} width="500" height="400"></td>
+                        </tr>
+                    {{/item}}
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

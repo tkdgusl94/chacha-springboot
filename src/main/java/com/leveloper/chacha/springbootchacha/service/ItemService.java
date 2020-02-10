@@ -2,7 +2,7 @@ package com.leveloper.chacha.springbootchacha.service;
 
 import com.leveloper.chacha.springbootchacha.aws.S3Uploader;
 import com.leveloper.chacha.springbootchacha.controller.dto.BookSaveRequestDto;
-import com.leveloper.chacha.springbootchacha.controller.dto.ItemResponseDto;
+import com.leveloper.chacha.springbootchacha.controller.dto.BookResponseDto;
 import com.leveloper.chacha.springbootchacha.domain.item.Book;
 import com.leveloper.chacha.springbootchacha.domain.item.Item;
 import com.leveloper.chacha.springbootchacha.repository.ItemRepository;
@@ -29,8 +29,8 @@ public class ItemService {
         return itemRepository.save(book).getId();
     }
 
-//    public ItemResponseDto findById(Long id) {
-//        Item item = itemRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 아이템이 없습니다. id = " + id));
-//
-//    }
+    public BookResponseDto findById(Long id) {
+        Book book = (Book) itemRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 아이템이 없습니다. id = " + id));
+        return new BookResponseDto(book);
+    }
 }

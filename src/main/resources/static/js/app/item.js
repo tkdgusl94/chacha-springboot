@@ -26,7 +26,7 @@ var main = {
             processData: false,
             data: formData
         }).done(function(id) {
-            window.location.href = '/';
+            window.location.href = '/items/'+id;
         }).fail(function (error) {
             alert(JSON.stringify(error));
         });
