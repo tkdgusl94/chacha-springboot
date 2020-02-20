@@ -42,4 +42,12 @@ public class IndexController {
         model.addAttribute("item", responseDto);
         return "items/detailItem";
     }
+
+    @GetMapping("/items")
+    public String itemList(Model model, @LoginUser SessionUser user){
+        if(user != null){
+            model.addAttribute("userName", user.getName());
+        }
+        return "items/itemList";
+    }
 }
